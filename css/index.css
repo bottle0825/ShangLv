@@ -1,0 +1,298 @@
+#headline {
+	max-width: 1920px;
+	padding: 70px 0 0 0;
+	margin: 0 auto;
+	position: relative;
+	border-bottom: 50px solid #800000;
+}
+#headline hgroup {
+	position: absolute;
+	top: 45%;
+	left: 18%;	
+}
+#headline h2 {
+	font-size: 45px;
+	letter-spacing: 1px;
+}
+#headline h3 {
+	letter-spacing: 1px;
+	font-size: 24px;
+}
+/*banner*/
+#banner {
+	max-width: 1920px;
+	margin: 0 auto;
+	position: relative;
+}
+#banner .center {
+	width: 40%;
+	/*height: 52px;*/
+	position: absolute;
+	top: 50%;
+	left:50%;
+	margin: -10px 0 0 -20%;
+	overflow: hidden;
+}
+#banner .search {
+	width: 70%;
+	height: 52px;
+	font-size:16px;
+	padding: 0 10px;
+	display: block;
+	border: 2px solid #800000;
+	border-right: none;
+	float: left;
+}
+#banner .button {
+	width: 30%;
+	height: 52px;
+	display: block;
+	float: right;
+	background-color: #800000;
+	color: white;
+	font-size: 16px;
+	cursor: pointer;
+	font-weight: bold;
+	border: 2px solid #800000;
+}
+
+/*旅游推荐*/
+#tour {
+	max-width: 1260px;
+	height: 1150px;
+	margin: 30px auto;
+	text-align: center;
+}
+#tour .center {
+	text-align: center;
+}
+#tour .center h2 {
+	color:#666;
+	margin: 10px 0;
+	font-size: 40px;
+	letter-spacing: 2px;
+	text-shadow: 0px 5px 10px #666;
+}
+#tour .center p{
+	margin: 10px;
+	font-size: 16px;
+}
+#tour .center p a{
+	color:#666;
+}
+
+/*旅游推荐列表*/
+#tour figure{
+	cursor: pointer;
+	/*border: 1px solid #A52A2A;*/
+	display: block;
+	padding: 4px;
+	border-radius: 2px;
+	box-shadow: 1px 1px 5px #999;
+	width: 32.4%;
+	margin: 15px 0.4%;
+	text-align: left;
+	float: left;
+	position: relative;
+	overflow: hidden;
+}
+#tour figure img{
+	vertical-align: middle;
+}
+#tour figure figcaption {
+	color: #666;
+	font-size: 14px;
+	padding: 7px 0 0 0;
+	letter-spacing: 1px;
+	line-height: 1.5;
+}
+#tour .tour_title {
+	height: 40px;
+	overflow: hidden;
+}
+#tour .title {
+	color:red;
+}
+
+/*旅游推荐列表信息*/
+#tour .info {
+	padding: 5px 0 0 0;
+}
+#tour .price {
+	color: #59b200;
+	font-size: 14px;
+}
+#tour .price strong {
+	font-size: 20px;
+	letter-spacing: 1px;
+}
+#tour .sat{
+	color: #999;
+	font-size: 13px;
+	font-style: normal;
+	float: right;
+	position: relative;
+	right: 5px;
+	top: 5px;
+}
+#tour .type {
+	position: absolute;
+	top: 4px;
+	left: -90px;
+	width: 90px;
+	height:30px;
+	line-height: 30px;
+	text-align: center;
+	border-bottom-right-radius: 4px;
+	background-color: rgba(0,0,0,0.5);
+	font-size: 14px;
+	color: #fff;
+	letter-spacing: 1px;
+}
+/*媒体查询，参考部分Bootstrap 框架*/
+/*当页面大于1200px 时，大屏幕，主要是PC 端*/
+@media (min-width: 1200px) {
+	
+}
+/*在992 和1199 像素之间的屏幕里，中等屏幕，分辨率低的PC*/
+@media (min-width: 992px) and (max-width: 1199px) {
+	#headline hgroup {
+		left: 8%;
+	}
+	#headline h2 {
+		font-size: 36px;
+	}
+	#headline h3 {
+		font-size: 20px;
+	}
+	#adver .center {
+		width: 50%;
+		margin: -10px 0 0 -25%;
+	}
+	#tour .center h2{
+		font-size: 40px;
+	}
+}
+/*在768 和991 像素之间的屏幕里，小屏幕，主要是PAD*/
+@media (min-width: 768px) and (max-width: 991px) {
+	#headline {
+		padding: 45px 0 0 0;
+	}
+	#headline {
+		padding: 45px 0 0 0;
+		border-bottom: 40px solid #800000;
+	}
+	#headline hgroup {
+		left: 8%;
+	}
+	#headline h2 {
+		font-size: 26px;
+	}
+	#headline h3 {
+		font-size: 14px;
+	}
+	#banner .center {
+		width: 60%;
+		margin: -10px 0 0 -30%;
+	}
+	#banner .search, #banner .button {
+		font-size: 20px;
+	}
+	#tour .center h2 {
+		font-size: 35px;
+	}
+}
+/*在480 和767 像素之间的屏幕里，超小屏幕，主要是手机*/
+@media (min-width: 480px) and (max-width: 767px) {
+	#header, #header .center, #header .link {
+		height: 45px;
+	}
+	#header .logo, .sm-hidden{
+		display: none;
+	}
+	#header .link {
+		width: 100%;
+		line-height: 45px;
+	}
+	#headline {
+		padding: 45px 0 0 0;
+		border-bottom: 30px solid #800000;
+	}
+	#headline hgroup {
+		left: 8%;
+	}
+	#headline h2 {
+		font-size: 26px;
+	}
+	#headline h3 {
+		font-size: 14px;
+	}
+	#banner .center {
+		width: 70%;
+		height: 53px;
+		margin: -10px 0 0 -35%;
+	}
+	#banner .search, #banner .button {
+		height: 45px;
+		font-size: 18px;
+	}
+	#tour .center h2 {
+		font-size: 30px;
+	}
+	#tour .center p{
+		font-size: 15px;
+	}
+	#tour figure {
+		width: 49.2%;
+	}
+}
+/*在小于480 像素的屏幕，微小屏幕，更低分辨率的手机*/
+@media (max-width: 479px) {
+	#header, #header .center, #header .link {
+		height: 45px;
+	}
+	#header .logo, .xs-hidden, .sm-hidden{
+		display: none;
+	}
+	#header .link {
+		width: 100%;
+		line-height: 45px;
+	}
+	#header .link li {
+		width: 25%;
+	}
+	#headline {
+		padding: 45px 0 0 0;
+		border-bottom: 20px solid #800000;
+	}
+	#headline hgroup {
+		left: 8%;
+	}
+	#headline h2 {
+		font-size: 26px;
+	}
+	#headline h3 {
+		font-size: 14px;
+	}
+	#banner .center {
+		width: 80%;
+		height: 48px;
+		margin: -10px 0 0 -40%;
+	}
+	#banner .search, #banner .button {
+		height: 40px;
+		font-size: 16px;
+	}
+	#footer .bottom, #footer .version {
+		font-size: 13px;
+	}
+	#tour .center h2 {
+		font-size: 26px;
+	}
+	#tour .center p{
+		font-size: 14px;
+	}
+	#tour figure {
+		width: 99%;
+	}
+}
