@@ -110,10 +110,11 @@ a {
 }
 #header .logo {
 	width: 30%;
-	height: 70px;
-	background: url(../img/logo.jpg) center center no-repeat;
+	height: 90px;
+	background: url(../img/logo.png) center center no-repeat;
+	background-size: 100% 200%;
 	float: left;
-	border-radius: 50%;
+	/*border-radius: 50%;*/
 }
 #header .link{
 	width: 55%;
